@@ -1,14 +1,13 @@
 {% set name = "libdrs" %}
-{% set version = "2.8" %}
+{% set version = "2.10" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-uvcdat-{{ version }}.tar.gz
-  url: https://github.com/UV-CDAT/libdrs/archive/master.tar.gz
-  sha256: dc057cedbcc0bfcd3aafdc3e04aca9c428f08d6fa1d679778d64be75980462a5
+  url: https://github.com/UV-CDAT/libdrs/archive/v2.10.tar.gz
+  sha256: c6f2e1698187eeb04290bb4dd4e975127bf17a73d8d66e97a3f6f982422e660e  
 
 build:
   number: 1
