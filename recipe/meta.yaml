@@ -1,16 +1,16 @@
 {% set name = "libdrs" %}
-{% set version = "2.10" %}
+{% set version = "2.12" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/UV-CDAT/libdrs/archive/v2.10.tar.gz
-  sha256: c6f2e1698187eeb04290bb4dd4e975127bf17a73d8d66e97a3f6f982422e660e  
+  url: https://github.com/UV-CDAT/libdrs/archive/v2.12.tar.gz
+  sha256: d44a71f7903ce75c3c1d3839564fba2e7275a88e2353a5d2197280ec938752f5
 
 build:
-  number: 1
+  number: 0
   skip: True  # [win] 
 
 requirements:
