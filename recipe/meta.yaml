@@ -6,20 +6,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/UV-CDAT/libdrs/archive/v3.0.tar.gz
+  url: https://github.com/CDAT/libdrs/archive/v3.0.tar.gz
   sha256: b587c06b13844e7d21ab43017da06175b0d344763e40c44b4593ffb766104388
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win] 
 
 requirements:
   build:
-    - libnetcdf 4.4.*
+    - libnetcdf 4.*
     - g2clib
     - gcc
   run:
-    - libnetcdf 4.4.*
+    - libnetcdf 4.*
     - g2clib
     - libgcc
 
