@@ -18,14 +18,16 @@ display of smaller subsets of data.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/libdrs-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/libdrs-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/libdrs-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/libdrs-feedstock)
-Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/libdrs-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/libdrs-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/libdrs-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/libdrs-feedstock)
+![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/libdrs/badges/version.svg)](https://anaconda.org/conda-forge/libdrs)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/libdrs/badges/downloads.svg)](https://anaconda.org/conda-forge/libdrs)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-libdrs-green.svg)](https://anaconda.org/conda-forge/libdrs) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/libdrs.svg)](https://anaconda.org/conda-forge/libdrs) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/libdrs.svg)](https://anaconda.org/conda-forge/libdrs) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/libdrs.svg)](https://anaconda.org/conda-forge/libdrs) |
 
 Installing libdrs
 =================
