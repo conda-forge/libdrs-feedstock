@@ -1,13 +1,13 @@
 {% set name = "libdrs" %}
-{% set version = "2.12" %}
+{% set version = "3.0.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/UV-CDAT/libdrs/archive/v2.12.tar.gz
-  sha256: d44a71f7903ce75c3c1d3839564fba2e7275a88e2353a5d2197280ec938752f5
+  url: https://github.com/CDAT/libdrs/archive/v3.0.1.tar.gz
+  sha256: d42ddac6a3503e9a27ade9b2a9cfd3771b2e845d18297bdf679414cb7a818a07
 
 build:
   number: 0
@@ -15,13 +15,16 @@ build:
 
 requirements:
   build:
-    - libnetcdf 4.4.*
+    - libnetcdf >=4.5
     - g2clib
-    - gcc
+    - gcc [osx]
+    - gcc_linux-64 [linux]
+    - gfortran_linux-64 [linux]
   run:
-    - libnetcdf 4.4.*
+    - libnetcdf >=4.5
     - g2clib
-    - libgcc
+    - gcc [osx]
+    - libgcc [linux]
 
 test:
   commands:
