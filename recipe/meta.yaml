@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/CDAT/libdrs/archive/v3.0.1.tar.gz
-  sha256: d42ddac6a3503e9a27ade9b2a9cfd3771b2e845d18297bdf679414cb7a818a07
+  sha256: df14b26ce57bb71722f48778882b3acf58dff435114fbbf61a3d2e2654c6d851
 
 build:
   number: 0
