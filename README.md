@@ -18,8 +18,8 @@ display of smaller subsets of data.
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/libdrs-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/libdrs-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/libdrs-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/libdrs-feedstock)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/libdrs-feedstock-dnadeau4-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/libdrs-feedstock-dnadeau4-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/libdrs-feedstock-dnadeau4-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/libdrs-feedstock-dnadeau4-feedstock)
 ![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
 
 Current release info
