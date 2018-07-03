@@ -6,22 +6,23 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/UV-CDAT/libdrs/archive/v3.0.tar.gz
-  sha256: b587c06b13844e7d21ab43017da06175b0d344763e40c44b4593ffb766104388
+  url: https://github.com/CDAT/libdrs/archive/v3.0.1.tar.gz
+  sha256: df14b26ce57bb71722f48778882b3acf58dff435114fbbf61a3d2e2654c6d851
 
 build:
-  number: 0
+  number: 2
   skip: True  # [win] 
 
 requirements:
   build:
-    - libnetcdf 4.4.*
+    - {{ compiler('c') }}
+    - {{ compiler('fortran') }}
+  host:
+    - libnetcdf >=4.5
     - g2clib
-    - gcc
   run:
-    - libnetcdf 4.4.*
+    - libnetcdf >=4.5
     - g2clib
-    - libgcc
 
 test:
   commands:
