@@ -1,4 +1,3 @@
-export FC=gfortran
 export CFLAGS="-Wall -g -m64 -pipe -O2  -fPIC ${CFLAGS}"
 export CXXLAGS="${CFLAGS} ${CXXLAGS}"
 export CPPFLAGS="-I${PREFIX}/include ${CPPFLAGS}"
@@ -9,6 +8,7 @@ if [ `uname` == Linux ]; then
     MAKEFILE=libdrs_Makefile.Linux.gfortran
     echo "Linux  "${PREFIX}
 else
+    export FC=gfortran
     MAKEFILE=libdrs_Makefile.Mac.gfortran
     echo "Mac  "${PREFIX}
 fi
