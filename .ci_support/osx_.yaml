@@ -1,9 +1,9 @@
 MACOSX_DEPLOYMENT_TARGET:
 - '10.9'
 c_compiler:
-- toolchain_c
+- gcc
 fortran_compiler:
-- toolchain_fort
+- gfortran
 libnetcdf:
 - '4.6'
 macos_machine:
