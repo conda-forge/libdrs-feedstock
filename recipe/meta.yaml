@@ -15,8 +15,8 @@ build:
 
 requirements:
   build:
-    - {{ compiler('gcc') }}        # need gcc7 to link library
-    - {{ compiler('gfortran') }}   # (_gmalloc_fortran) issue without gfortran7
+    - {{ compiler('c') }}        # need gcc7 to link library
+    - {{ compiler('fortran') }}   # (_gmalloc_fortran) issue without gfortran7
   host:
     - libnetcdf 
     - g2clib

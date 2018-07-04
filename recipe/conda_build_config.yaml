@@ -1,4 +1,4 @@
-gcc_compiler:
+c_compiler:
   - gcc             # [linux]
-gfortran_compiler:
+fortran_compiler:
   - gfortran        # [linux]
