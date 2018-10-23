@@ -31,15 +31,18 @@ test:
     - test -f $PREFIX/lib/libdrs.a 
 
 about:
-  home:  http://uvcdat.llnl.gov
-  license: CCLRC
-  summary: 'Data Retrieval and Storage DRS software C library'
-  description: |            
-    libdrs is suitable for the data generated and used in climate model research. 
-    It is oriented toward use with models generating very large datasets on 
-    supercomputers, as well as with graphics workstations used for analysis and 
-    display of smaller subsets of data. 
+  home:  http://cdat.llnl.gov
+  summary: 'Data Retrieval and Storage DRS software Fortran library'
+  license: BSD
+  license_file: bsd-3-clause.txt
+  description: |
+    libdrs is suitable for the data generated and used in climate model research.
+    It is oriented toward use with models generating very large datasets on
+    supercomputers, as well as with graphics workstations used for analysis and
+    display of smaller subsets of data.
   dev_url: http://github.com/UV-CDAT/libdrs
+
+
 
 extra:
   recipe-maintainers:
