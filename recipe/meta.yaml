@@ -1,5 +1,5 @@
 {% set name = "libdrs" %}
-{% set version = "3.0.1" %}
+{% set version = "3.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -10,7 +10,7 @@ source:
   sha256: df14b26ce57bb71722f48778882b3acf58dff435114fbbf61a3d2e2654c6d851
 
 build:
-  number: 3
+  number: 0
   skip: True  # [win] 
 
 requirements:
