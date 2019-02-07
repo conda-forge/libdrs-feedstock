@@ -5,13 +5,13 @@
 About libdrs
 ============
 
-Home: http://uvcdat.llnl.gov
+Home: http://cdat.llnl.gov
 
-Package license: CCLRC
+Package license: BSD
 
 Feedstock license: BSD 3-Clause
 
-Summary: Data Retrieval and Storage DRS software C library
+Summary: Data Retrieval and Storage DRS software Fortran library
 
 libdrs is suitable for the data generated and used in climate model research.
 It is oriented toward use with models generating very large datasets on

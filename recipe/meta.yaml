@@ -1,42 +1,46 @@
 {% set name = "libdrs" %}
-{% set version = "3.0" %}
+{% set version = "3.1.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/UV-CDAT/libdrs/archive/v3.0.tar.gz
-  sha256: b587c06b13844e7d21ab43017da06175b0d344763e40c44b4593ffb766104388
+  url: https://github.com/CDAT/libdrs/archive/v{{ version }}.tar.gz
+  sha256: bb36d6545fc330348f7b2f665b37da3a4b356f68adcdd1ae01a79c5c216a08f7
 
 build:
-  number: 0
+  number: 1000
   skip: True  # [win] 
 
 requirements:
   build:
-    - libnetcdf 4.4.*
+    - {{ compiler('c') }}        # need gcc7 to link library
+    - {{ compiler('fortran') }}   # (_gmalloc_fortran) issue without gfortran7
+  host:
+    - libnetcdf 
     - g2clib
-    - gcc
   run:
-    - libnetcdf 4.4.*
+    - libnetcdf 
     - g2clib
-    - libgcc
 
 test:
   commands:
     - test -f $PREFIX/lib/libdrs.a 
 
 about:
-  home:  http://uvcdat.llnl.gov
-  license: CCLRC
-  summary: 'Data Retrieval and Storage DRS software C library'
-  description: |            
-    libdrs is suitable for the data generated and used in climate model research. 
-    It is oriented toward use with models generating very large datasets on 
-    supercomputers, as well as with graphics workstations used for analysis and 
-    display of smaller subsets of data. 
+  home:  http://cdat.llnl.gov
+  summary: 'Data Retrieval and Storage DRS software Fortran library'
+  license: BSD
+  license_file: bsd-3-clause.txt
+  description: |
+    libdrs is suitable for the data generated and used in climate model research.
+    It is oriented toward use with models generating very large datasets on
+    supercomputers, as well as with graphics workstations used for analysis and
+    display of smaller subsets of data.
   dev_url: http://github.com/UV-CDAT/libdrs
+
+
 
 extra:
   recipe-maintainers:
