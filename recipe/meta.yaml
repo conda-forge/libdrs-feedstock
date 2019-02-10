@@ -1,5 +1,5 @@
 {% set name = "libdrs_f" %}
-{% set version = "3.1.1" %}
+{% set version = "3.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/CDAT/libdrs/archive/v{{ version }}.tar.gz
-  sha256: 6fdb8b636ff23cc5519b66ce74f2800dc51c08bb585e881a5571503f60aa9253
+  sha256: 90e10191116a78228739276078a0ddcf0d6458516f192e9e79fecb2beeceb3fa
 
 build:
   number: 0
