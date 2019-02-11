@@ -8,8 +8,8 @@ docker_image:
 - condaforge/linux-anvil-comp7
 fortran_compiler:
 - gfortran
-libpng:
-- 1.6.35
+libnetcdf:
+- '4.6'
 pin_run_as_build:
-  libpng:
+  libnetcdf:
     max_pin: x.x
