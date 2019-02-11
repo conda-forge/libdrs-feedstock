@@ -10,7 +10,7 @@ source:
   sha256: 90e10191116a78228739276078a0ddcf0d6458516f192e9e79fecb2beeceb3fa
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win]
 
 requirements:
@@ -19,8 +19,6 @@ requirements:
     - {{ compiler('fortran') }}
     - {{ compiler('c') }}
   host:
-    - {{ compiler('fortran') }}
-    - {{ compiler('c') }}
     - g2clib
     - libcdms
     - libpng
