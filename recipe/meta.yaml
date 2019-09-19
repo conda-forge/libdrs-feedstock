@@ -10,12 +10,12 @@ source:
   sha256: 90e10191116a78228739276078a0ddcf0d6458516f192e9e79fecb2beeceb3fa
 
 build:
-  number: 3
+  number: 4
   skip: True  # [win] 
 
 requirements:
   build:
-    - {{ compiler('c') }}        # need gcc7 to link library
+    - {{ compiler('c') }}         # need gcc7 to link library
     - {{ compiler('fortran') }}   # (_gmalloc_fortran) issue without gfortran7
   host:
     - libnetcdf 
@@ -38,11 +38,11 @@ about:
     It is oriented toward use with models generating very large datasets on
     supercomputers, as well as with graphics workstations used for analysis and
     display of smaller subsets of data.
-  dev_url: http://github.com/UV-CDAT/libdrs
-
-
+  dev_url: http://github.com/CDAT/libdrs
 
 extra:
   recipe-maintainers:
     - dnadeau4
     - doutriaux1
+    - downiec
+    - muryanto1
