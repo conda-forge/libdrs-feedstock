@@ -10,18 +10,20 @@ source:
   sha256: 90e10191116a78228739276078a0ddcf0d6458516f192e9e79fecb2beeceb3fa
 
 build:
-  number: 5
+  number: 6
   skip: True  # [win] 
 
 requirements:
   build:
     - {{ compiler('c') }}         # need gcc7 to link library
     - {{ compiler('fortran') }}   # (_gmalloc_fortran) issue without gfortran7
+    - libnetcdf 4.6.2
+    - g2clib
   host:
-    - libnetcdf 
+    - libnetcdf 4.6.2
     - g2clib
   run:
-    - libnetcdf 
+    - libnetcdf 4.6.2
     - g2clib
 
 test:
@@ -47,3 +49,4 @@ extra:
     - downiec
     - muryanto1
     - jasonb5
+    - xylar
