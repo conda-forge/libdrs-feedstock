@@ -1,5 +1,0 @@
-c_compiler:
-  - gcc             #  [linux]
-  - clang           #  [osx]
-fortran_compiler:
-  - gfortran        #  [linux or osx]
