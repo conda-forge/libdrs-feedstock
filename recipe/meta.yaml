@@ -54,7 +54,7 @@ test:
 about:
   home:  http://cdat.llnl.gov
   summary: 'Data Retrieval and Storage DRS software Fortran library'
-  license: BSD
+  license: BSD-3-Clause
   license_file: bsd-3-clause.txt
   description: |
     libdrs is suitable for the data generated and used in climate model research.
