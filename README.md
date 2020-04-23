@@ -3,7 +3,7 @@ About libdrs
 
 Home: http://cdat.llnl.gov
 
-Package license: BSD
+Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
@@ -26,8 +26,8 @@ Current build status
     <td>
       <details>
         <summary>
-          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=master">
-            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/rebuild_with_mpi_variants-feedstock?branchName=master">
+          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=530&branchName=master">
+            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libdrs-feedstock?branchName=master">
           </a>
         </summary>
         <table>
@@ -35,43 +35,43 @@ Current build status
           <tbody><tr>
               <td>linux_mpimpich</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/rebuild_with_mpi_variants-feedstock?branchName=master&jobName=linux&configuration=linux_mpimpich" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=530&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libdrs-feedstock?branchName=master&jobName=linux&configuration=linux_mpimpich" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_mpinompi</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/rebuild_with_mpi_variants-feedstock?branchName=master&jobName=linux&configuration=linux_mpinompi" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=530&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libdrs-feedstock?branchName=master&jobName=linux&configuration=linux_mpinompi" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_mpiopenmpi</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/rebuild_with_mpi_variants-feedstock?branchName=master&jobName=linux&configuration=linux_mpiopenmpi" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=530&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libdrs-feedstock?branchName=master&jobName=linux&configuration=linux_mpiopenmpi" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_mpimpich</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/rebuild_with_mpi_variants-feedstock?branchName=master&jobName=osx&configuration=osx_mpimpich" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=530&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libdrs-feedstock?branchName=master&jobName=osx&configuration=osx_mpimpich" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_mpinompi</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/rebuild_with_mpi_variants-feedstock?branchName=master&jobName=osx&configuration=osx_mpinompi" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=530&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libdrs-feedstock?branchName=master&jobName=osx&configuration=osx_mpinompi" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_mpiopenmpi</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/rebuild_with_mpi_variants-feedstock?branchName=master&jobName=osx&configuration=osx_mpiopenmpi" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=530&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libdrs-feedstock?branchName=master&jobName=osx&configuration=osx_mpiopenmpi" alt="variant">
                 </a>
               </td>
             </tr>
