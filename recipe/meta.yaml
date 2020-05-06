@@ -20,7 +20,6 @@ requirements:
     - {{ compiler('fortran') }}   # (_gmalloc_fortran) issue without gfortran7
   host:
     - libnetcdf
-    - libnetcdf * nompi_*
     - g2clib
   run:
     - libnetcdf
