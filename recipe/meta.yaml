@@ -18,6 +18,7 @@ requirements:
   build:
     - {{ compiler('c') }}         # need gcc7 to link library
     - {{ compiler('fortran') }}   # (_gmalloc_fortran) issue without gfortran7
+    - make
   host:
     - libnetcdf
     - libnetcdf * nompi_*
