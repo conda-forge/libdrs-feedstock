@@ -1,6 +1,6 @@
 {% set name = "libdrs" %}
 {% set version = "3.1.2" %}
-{% set build = 114 %}
+{% set build = 115 %}
 
 package:
   name: {{ name|lower }}
@@ -18,6 +18,7 @@ requirements:
   build:
     - {{ compiler('c') }}         # need gcc7 to link library
     - {{ compiler('fortran') }}   # (_gmalloc_fortran) issue without gfortran7
+    - make
   host:
     - libnetcdf
     - libnetcdf * nompi_*
@@ -47,6 +48,5 @@ extra:
     - dnadeau4
     - doutriaux1
     - downiec
-    - muryanto1
     - jasonb5
     - xylar
