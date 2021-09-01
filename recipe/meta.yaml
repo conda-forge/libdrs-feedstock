@@ -1,6 +1,6 @@
 {% set name = "libdrs" %}
 {% set version = "3.1.2" %}
-{% set build = 115 %}
+{% set build = 116 %}
 
 package:
   name: {{ name|lower }}
@@ -9,6 +9,8 @@ package:
 source:
   url: https://github.com/CDAT/libdrs/archive/v{{ version }}.tar.gz
   sha256: 90e10191116a78228739276078a0ddcf0d6458516f192e9e79fecb2beeceb3fa
+  patches:
+    - 0001-remove-mtune-option.patch
 
 build:
   number: {{ build }}

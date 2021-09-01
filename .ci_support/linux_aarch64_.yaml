@@ -19,7 +19,7 @@ fortran_compiler:
 fortran_compiler_version:
 - '9'
 libnetcdf:
-- 4.8.0
+- 4.8.1
 target_platform:
 - linux-aarch64
 zip_keys:
