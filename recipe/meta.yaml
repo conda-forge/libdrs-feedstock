@@ -11,6 +11,7 @@ source:
   sha256: 90e10191116a78228739276078a0ddcf0d6458516f192e9e79fecb2beeceb3fa
   patches:
     - 0001-remove-mtune-option.patch
+    - 0002-remove-lgfortran.patch
 
 build:
   number: {{ build }}

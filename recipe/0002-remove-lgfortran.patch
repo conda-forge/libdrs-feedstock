@@ -1,0 +1,24 @@
+diff -ruN libdrs-3.1.2/lib/libdrs_Makefile.Linux.gfortran.in libdrs-3.1.2-patch/lib/libdrs_Makefile.Linux.gfortran.in
+--- libdrs-3.1.2/lib/libdrs_Makefile.Linux.gfortran.in	2019-02-08 18:18:59.000000000 -0700
++++ libdrs-3.1.2-patch/lib/libdrs_Makefile.Linux.gfortran.in	2021-10-04 22:03:47.529727876 -0600
+@@ -47,7 +47,7 @@
+ 	ar rv libdrs.a $?
+ 
+ libdrs.so: $(OBJECTS)
+-	$(CC) $(ARCHOPT) -lgfortran  -shared -o libdrs.so $(OBJECTS)
++	$(CC) $(ARCHOPT) -shared -o libdrs.so $(OBJECTS)
+ 
+ drsdef.h: drsdef.HH
+ 	$(CPP) -P $(CPPFLAGS) drsdef.HH drsdef.h
+diff -ruN libdrs-3.1.2/lib/Makefile.LINUX.gfortran libdrs-3.1.2-patch/lib/Makefile.LINUX.gfortran
+--- libdrs-3.1.2/lib/Makefile.LINUX.gfortran	2019-02-08 18:18:59.000000000 -0700
++++ libdrs-3.1.2-patch/lib/Makefile.LINUX.gfortran	2021-10-04 22:04:14.689518314 -0600
+@@ -47,7 +47,7 @@
+ 	ar rv libdrs.a $?
+ 
+ libdrs.so: $(OBJECTS)
+-	$(CC) $(ARCHOPT) -lgfortran  -shared -o libdrs.so $(OBJECTS)
++	$(CC) $(ARCHOPT) -shared -o libdrs.so $(OBJECTS)
+ 
+ drsdef.h: drsdef.HH
+ 	$(CPP) -P $(CPPFLAGS) drsdef.HH drsdef.h
