@@ -25,9 +25,9 @@ requirements:
   host:
     - libnetcdf
     - libnetcdf * nompi_*
-    - g2clib 1.6.0
+    - g2clib 1.6.3
   run:
-    - g2clib 1.6.0
+    - g2clib 1.6.3
 
 test:
   commands:
