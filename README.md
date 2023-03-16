@@ -1,11 +1,11 @@
-About libdrs
-============
+About libdrs-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/libdrs-feedstock/blob/main/LICENSE.txt)
 
 Home: http://cdat.llnl.gov
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/libdrs-feedstock/blob/main/LICENSE.txt)
 
 Summary: Data Retrieval and Storage DRS software Fortran library
 
