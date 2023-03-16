@@ -26,9 +26,6 @@ requirements:
     - libnetcdf
     - libnetcdf * nompi_*
     - g2clib <1.7.0
-  run:
-    - libnetcdf
-    - g2clib <1.7.0
 
 test:
   commands:
