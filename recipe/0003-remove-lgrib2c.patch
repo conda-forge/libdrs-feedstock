@@ -1,0 +1,39 @@
+diff --git a/lib/Makefile.Mac.gfortran b/lib/Makefile.Mac.gfortran
+index 6e93928..863812f 100644
+--- a/lib/Makefile.Mac.gfortran
++++ b/lib/Makefile.Mac.gfortran
+@@ -57,7 +57,7 @@ libdrs.a: $(OBJECTS)
+ 
+ # formerly in libdrs.so, needed for Fortran->cdms link: -lcdms
+ libdrs.so: $(OBJECTS)
+-	$(CC) $(ARCHOPT) -headerpad_max_install_names -lgfortran  -L${UVCDAT_SETUP_PATH}/Library/Frameworks/Python.framework/Versions/2.7/lib -L/usr/local/lib/ -L${UVCDAT_SETUP_PATH}/Externals/lib -lnetcdf -lgrib2c -l quadmath -L /usr/local/lib/gcc/x86_64-apple-darwin10.7.0/4.6.0 -lgcc -shared -o libdrs.so $(OBJECTS)
++	$(CC) $(ARCHOPT) -headerpad_max_install_names -lgfortran  -L${UVCDAT_SETUP_PATH}/Library/Frameworks/Python.framework/Versions/2.7/lib -L/usr/local/lib/ -L${UVCDAT_SETUP_PATH}/Externals/lib -lnetcdf -l quadmath -L /usr/local/lib/gcc/x86_64-apple-darwin10.7.0/4.6.0 -lgcc -shared -o libdrs.so $(OBJECTS)
+ 
+ drsdef.h: drsdef.HH
+ 	$(CPP) -P $(CPPFLAGS) drsdef.HH drsdef.h
+diff --git a/lib/libdrs_Makefile.Mac.fwrap.gfortran.in b/lib/libdrs_Makefile.Mac.fwrap.gfortran.in
+index 0e42ae6..9a9908e 100644
+--- a/lib/libdrs_Makefile.Mac.fwrap.gfortran.in
++++ b/lib/libdrs_Makefile.Mac.fwrap.gfortran.in
+@@ -53,7 +53,7 @@ libdrsfortran.a: $(OBJECTS)
+ 
+ # formerly in libdrs.so, needed for Fortran->cdms link: -lcdms
+ libdrsfortran.dylib: libdrsfortran.a
+-	$(CC) -shared -Wl,-force_load ./libdrsfortran.a -L@cdat_EXTERNALS@/lib -lcdms -lpng -ljasper -lnetcdf -lgrib2c  -lquadmath -lgfortran -shared -o @cdat_EXTERNALS@/lib/libdrsfortran.dylib
++	$(CC) -shared -Wl,-force_load ./libdrsfortran.a -L@cdat_EXTERNALS@/lib -lcdms -lpng -ljasper -lnetcdf  -lquadmath -lgfortran -shared -o @cdat_EXTERNALS@/lib/libdrsfortran.dylib
+ 	# $(CC) -shared -o $(LIBDIR)/libdrs.dylib -Wl,-force_load libdrs.a @NCOPTS@ @HDFOPTS@ @DRSOPTS@  @GRIB2LIB@ @LIBS@
+ 
+ drsdef.h: drsdef.HH
+diff --git a/lib/libdrs_Makefile.Mac.gfortran.in b/lib/libdrs_Makefile.Mac.gfortran.in
+index b1fa9ed..763ea70 100644
+--- a/lib/libdrs_Makefile.Mac.gfortran.in
++++ b/lib/libdrs_Makefile.Mac.gfortran.in
+@@ -57,7 +57,7 @@ libdrs.a: $(OBJECTS)
+ 
+ # formerly in libdrs.so, needed for Fortran->cdms link: -lcdms
+ libdrs.dylib: $(OBJECTS)
+-	$(CC) -shared -Wl,-force_load ./libdrs.a -L@cdat_EXTERNALS@/lib -lnetcdf -lgrib2c  -lquadmath -lgfortran -shared -o @cdat_EXTERNALS@/lib/libdrs.dylib
++	$(CC) -shared -Wl,-force_load ./libdrs.a -L@cdat_EXTERNALS@/lib -lnetcdf -lquadmath -lgfortran -shared -o @cdat_EXTERNALS@/lib/libdrs.dylib
+ #   $(CC) $(ARCHOPT) -headerpad_max_install_names -L@cdat_EXTERNALS@/lib -lgfortran -lnetcdf -lgrib2c -lquadmath -lcdms -shared -lpng -ljasper -o @cdat_EXTERNALS@/lib/libdrsfortran.dylib $(OBJECTS)
+ #	$(CC) $(ARCHOPT) -headerpad_max_install_names -lgfortran -L@cdat_EXTERNALS@/lib -lnetcdf -lgrib2c  -lquadmath -shared -o libdrs.dylib $(OBJECTS)
+ 
