@@ -12,7 +12,7 @@ source:
   patches:
     - 0001-remove-mtune-option.patch
     - 0002-remove-lgfortran.patch  # [linux & (ppc64le | aarch64)]
-    - 0003-remove-lgrib2c.patch # [osx] 
+    - 0003-remove-lgrib2c.patch  # [osx] 
 
 build:
   number: {{ build }}
