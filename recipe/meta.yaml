@@ -1,6 +1,6 @@
 {% set name = "libdrs" %}
 {% set version = "3.1.2" %}
-{% set build = 119 %}
+{% set build = 120 %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   patches:
     - 0001-remove-mtune-option.patch
     - 0002-remove-lgfortran.patch  # [linux & (ppc64le | aarch64)]
-    - 0003-remove-lgrib2c.patch # [osx]
+    - 0003-remove-lgrib2c.patch  # [osx] 
 
 build:
   number: {{ build }}
@@ -24,12 +24,10 @@ requirements:
     - {{ compiler('fortran') }}   # (_gmalloc_fortran) issue without gfortran7
     - make
   host:
-    - libnetcdf
     - libnetcdf * nompi_*
     - g2clib
   run:
     - libnetcdf
-    - g2clib
 
 test:
   commands:
